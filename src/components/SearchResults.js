@@ -34,10 +34,10 @@ const SearchResults = ({ userDetails }) =>{
             </div>
             <footer>
                 <ul>
-                    <li ><i className="fas fa-map-marker-alt"></i>{userDetails.location}</li>
-                    <li><i className="fab fa-twitter" ></i>{userDetails.twitter_username}</li>
-                    <li className="link"><i className="fas fa-link"></i><a href={userDetails.blog}>{userDetails.blog}</a></li>
-                    <li><i className="fas fa-building" style={{color: userDetails.company === null ? "#ccc" : "fff"}}></i>{userDetails.company === null ? "Not Available" : userDetails.company}</li>
+                    <li ><i className="fas fa-map-marker-alt"  style={{color: userDetails.location === null || userDetails.location === "" ? "#ccc" : "#fff"}}></i>{userDetails.location === null ? "Not available" : userDetails.location}</li>
+                    <li><i className="fab fa-twitter"  style={{color: userDetails.twitter_username === null || userDetails.twitter_username === "" ? "#ccc" : "#fff"}} ></i>{userDetails.twitter_username === null ? "Not available" : userDetails.twitter_username}</li>
+                    <li className="link"><i className="fas fa-link" style={{color: userDetails.blog === null || userDetails.blog === "" ? "#ccc" : "#fff"}}></i>{userDetails.blog === null || userDetails.blog === "" ? "Not available" : userDetails.blog}</li>
+                    <li><i className="fas fa-building" style={{color: userDetails.company === null ? "#ccc" : "#fff"}}></i>{userDetails.company === null ? "Not Available" : userDetails.company}</li>
                 </ul>
             </footer>
         </div>

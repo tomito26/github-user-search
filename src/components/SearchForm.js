@@ -5,7 +5,10 @@ const SearchForm = ({ getUser }) =>{
 
     const handleSubmit = (e) =>{
         e.preventDefault()
-        if(!value) return;
+        if(!value){
+            alert("Please Enter Github username")
+            return
+        };
         getUser(value)
         setValue("")
     }

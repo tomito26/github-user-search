@@ -1,13 +1,146 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+*{
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  background-color: #0d1b2a;
+  font-family: 'Lato', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+}
+.container{
+  background-color: #1b263b;
+  width: 600px;
+  display: flex;
+  padding: 20px;
+  border-radius: 10px;
+}
+.container img{
+  height: 80px;
+  width: 80px;
+  border-radius: 100%;
+  margin-right: 30px;
+}
+.profile-info{
+  width: 450px;
+  display: flex;
+  justify-content: space-between;
+}
+.profile-info h3{
+  color: #f4f4f4;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+.username{
+  color: #3f37c9;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-family: "Lato",sans-serif;
+  font-weight: 400;
+}
+.date-joined{
+  color: #ccc;
+  font-size: 16px;
+}
+.bio{
+  color: #ddd;
+  font-size: 15px;
+  font-family: "Lato",sans-serif;
+  margin-bottom:20px;
+}
+.git-info{
+  width: 450px;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  background-color: #0d1b2a;
+  padding: 10px 30px;
+  border-radius: 10px;
+}
+.git-info h3{
+  color: #ccc;
+  font-size: 14px;
+}
+.git-info p{
+  color: #f4f4f4;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+footer  ul {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  justify-items: start;
+  margin-top: 20px;
+  list-style: none;
+  
+}
+ul li{
+  color: #ccc;
+  margin-top: 10px;
+  font-size: 14px;
+}
+ul li:nth-child(even){
+  margin-left: 30px;
+  
+  
+}
+ul li i{
+  color: #fff;
+  font-size: 18px;
+  margin-right: 10px;
+}
+ul li a{
+  text-decoration: none;
+  color: #ccc;
+}
+ul li .link:hover{
+  cursor: pointer;
+  color: #fff;
+}
+.form-container{
+  width: 600px;
+  height: 50px;
+  background-color: #1b263b;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+form{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+}
+.form-control{
+  background-color: transparent;
+  font-size: 16px;
+  width: 400px;
+  word-spacing: 10px;
+  border: none;
+  padding:6px 40px;
+  font-family: "Lato",sans-serif;
+  color: #eee;
+}
+.form-control::placeholder{
+  color: #ccc;
+}
+.form-control:focus{
+  outline: none;
+}
+.btn{
+  padding: 4px 12px;
+  border-radius: 7px;
+  border: none;
+  cursor: pointer;
+  background-color: #1e6091;
+  font-size: 15px;
+  font-family: "Lato",sans-serif;
+  color: #ccc;
 }

@@ -18,7 +18,7 @@ body{
   background-color: #1b263b;
   width: 600px;
   display: flex;
-  padding: 20px;
+  padding: 30px;
   border-radius: 10px;
 }
 .container img{
@@ -48,6 +48,7 @@ body{
 .date-joined{
   color: #ccc;
   font-size: 16px;
+  word-spacing: 5px;
 }
 .bio{
   color: #ddd;
